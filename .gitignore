@@ -1,0 +1,10 @@
+obj
+
+bin
+packages
+*.suo
+*.user
+/oldstuff
+*.userprefs
+
+src/ClassicCalculator/Calculadora.IOS.userprefs

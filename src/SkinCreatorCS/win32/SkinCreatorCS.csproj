@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,15 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\ClassicCalculator\Common\Entities\CustomElement.cs">
-      <Link>Entities\CustomElement.cs</Link>
-    </Compile>
-    <Compile Include="..\..\ClassicCalculator\Common\Entities\FileData.cs">
-      <Link>Entities\FileData.cs</Link>
-    </Compile>
-    <Compile Include="..\..\ClassicCalculator\Common\Helpers\XmlSerialization.cs">
-      <Link>Helpers\XmlSerialization.cs</Link>
-    </Compile>
     <Compile Include="Controls\TransparentLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -98,6 +89,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="..\..\ClassicCalculatorV2\Common\Entities\CustomElement.cs">
+      <Link>Entities\CustomElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ClassicCalculatorV2\Common\Entities\FileData.cs">
+      <Link>Entities\FileData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ClassicCalculatorV2\Common\Helpers\XmlSerialization.cs">
+      <Link>Helpers\XmlSerialization.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -177,4 +177,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
 </Project>

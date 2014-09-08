@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicCalculator", "win32\ClassicCalculator.csproj", "{4923DD61-51D4-4D25-B91F-3184828D0DDB}"
@@ -75,6 +75,9 @@ Global
 		{9BD8544B-3AA8-4754-8A69-2E18AB963B44}.ReleasePhysics|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9BD8544B-3AA8-4754-8A69-2E18AB963B44}.ReleasePhysics|Mixed Platforms.Build.0 = Release|Any CPU
 		{9BD8544B-3AA8-4754-8A69-2E18AB963B44}.ReleasePhysics|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ..\SkinCreatorCS\win32\SkinCreatorCS.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
